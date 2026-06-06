@@ -1,0 +1,22 @@
+{
+  "name": "draco.js",
+  "description": "A pure-JavaScript Draco mesh loader for three.js.",
+  "homepage": "https://mrdoob.github.io/draco.js/",
+  "repository": { "type": "git", "url": "git+https://github.com/mrdoob/draco.js.git" },
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c",
+    "bench": "node tools/bench.mjs",
+    "verify": "node tools/verify-wasm.mjs",
+    "start": "npx http-server -p 8080 -c-1"
+  },
+  "dependencies": {
+    "draco3d": "^1.5.7",
+    "three": "^0.182.0"
+  },
+  "devDependencies": {
+    "rollup": "^4.61.0",
+    "terser": "^5.48.0"
+  }
+}
